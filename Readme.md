@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Марина Журавлева](https://up.htmlacademy.ru/htmlcss/20/user/635697).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
