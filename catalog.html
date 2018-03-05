@@ -25,23 +25,21 @@
             <h2 class="visually-hidden">Наполнение корзины</h2>
               <div>
               <button class="button" type="button">x</button>
-              <img src="#" alt="Пломбир с апельсиновым джемом" width="267" height="267">
+              <img src="#" alt="Пломбир с апельсиновым джемом" width="33" height="33">
               <p class="ice-cream">Пломбир с апельсиновым джемом</p>
-              <p class="weight">1,5кг х</p>
-              <p class="price-per-kilo">200 руб.</p>
+              <p class="price-count">1,5кг х<span>200 руб.</span></p>
               <p class="price-per-weight">300 руб.</p>
               </div>
               <div>
               <button class="button" type="button">x</button>
-              <img src="#" alt="Пломбир с апельсиновым джемом" width="267" height="267">
+              <img src="#" alt="Пломбир с апельсиновым джемом" width="33" height="33">
               <p class="ice-cream">Клубничный пломбир с присыпкой из белого шоколада</p>
-              <p class="weight">1,5кг х</p>
-              <p class="price-per-kilo">300 руб.</p>
+              <p class="price-count">1,5кг х<span>300 руб.</span></p>
               <p class="price-per-weight">450 руб.</p>
               </div>
               <b>Итого: 750 руб.</b>
               <a class="button" href="#">Оформить заказ</a>
-            </section>
+              </section>
         </li>
       </ul>
         <span class="working-hours">С 10 до 20, ежедневно</span>
@@ -50,9 +48,9 @@
 
     <main class="container">
       <div class="breadcrumbs">
-            <span><a href="/index.html">Главная</a></span>
-            <span><a href="#">Каталог</a></span>
-            <span><a class="active" href="#">Сливочное</a></span>
+            <a href="index.html">Главная</a>
+            <a href="#">Каталог</a>
+            <a class="active" href="#">Сливочное</a>
       </div>
       <h1>Сливочное мороженое</h1>
 
@@ -68,47 +66,52 @@
                   <option value="fat-range">по жирности</option>
                 </select>
               </fieldset>
-            <!-- 2 ползунка через JavaScript? -->
+
               <fieldset class="choice-form-item">
-                <label for="range-price">Цена:</label>
-                <output name="price-output-1"></output>
-                <p>&nbsp;-&nbsp;</p>
-                <output name="price-output-2"></output>
-                <input class="choice-form-item" type="range" id="range-price" name="range-price" min="0" max="800" step="100">
-              <!-- Уточнить максимальную цену -->
+                <p>Цена:</p>
+                <label class="visually-hidden" for="lowest-price">Наименьшая цена</label>
+                <input type="text" id="highest-price">
+                <p>руб.&ndash;</p>
+                <label class="visually-hidden" for="highest-price">Наибольшая цена</label>
+                <p>руб.</p>
+                <div class="choice-form-item">
+                  <!-- Здесь будут ползунки
+                  <input type="range" id="range-price" name="range-price" min="0" max="800" step="100">
+                  -->
+                </div>
               </fieldset>
-            <!-- 2 ползунка через JavaScript? -->
+
               <fieldset class="choice-form-item">
                 <legend>Жирность:</legend>
-                <input type="radio" id="choice-form-btn-1" name="toggle">
+                <input type="radio" id="choice-form-btn-1" name="fat" value="toggle-1">
                 <label for="choice-form-btn-1"> 0%</label>
-                <input type="radio" id="choice-form-btn-2" name="toggle" checked>
+                <input type="radio" id="choice-form-btn-2" name="fat" value="toggle-2" checked>
                 <label for="choice-form-btn-2">до 10%</label>
-                <input type="radio" id="choice-form-btn-3" name="toggle">
+                <input type="radio" id="choice-form-btn-3" name="fat" value="toggle-3">
                 <label for="choice-form-btn-3">до 30%</label>
-                <input type="radio" id="choice-form-btn-4" name="toggle">
+                <input type="radio" id="choice-form-btn-4" name="fat" value="toggle-4">
                 <label for="choice-form-btn-4">выше 30%</label>
               </fieldset>
               <fieldset class="choice-form-item">
                 <p>Наполнители:</p>
                 <div>
-                    <input type="checkbox" id="chocolate" checked>
+                    <input type="checkbox" id="chocolate" name="chocolate" value="chocolate" checked>
                     <label for="chocolate">шоколадные</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="sugar" checked>
+                    <input type="checkbox" id="sugar" name="filler" value="sugar" checked>
                     <label for="sugar">сахарные присыпки</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="fruits">
+                    <input type="checkbox" id="fruits" name="filler" value="fruits">
                     <label for="fruits">фрукты</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="syrup">
+                    <input type="checkbox" id="syrup" name="filler" value="syrup">
                     <label for="syrup">сиропы</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="jam">
+                    <input type="checkbox" id="jam" name="filler" value="jam">
                     <label for="jam">джемы</label>
                 </div>
               </fieldset>
