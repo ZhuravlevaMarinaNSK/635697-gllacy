@@ -70,9 +70,10 @@
               <fieldset class="choice-form-item">
                 <p>Цена:</p>
                 <label class="visually-hidden" for="lowest-price">Наименьшая цена</label>
-                <input type="text" id="highest-price">
+                <input type="text" id="lowest-price" value="lowest-price">
                 <p>руб.&ndash;</p>
                 <label class="visually-hidden" for="highest-price">Наибольшая цена</label>
+                <input type="text" id="highest-price" value="highest-price">
                 <p>руб.</p>
                 <div class="choice-form-item">
                   <!-- Здесь будут ползунки
@@ -83,13 +84,13 @@
 
               <fieldset class="choice-form-item">
                 <legend>Жирность:</legend>
-                <input type="radio" id="choice-form-btn-1" name="fat" value="toggle-1">
+                <input type="radio" id="choice-form-btn-1" name="fat" value="0">
                 <label for="choice-form-btn-1"> 0%</label>
-                <input type="radio" id="choice-form-btn-2" name="fat" value="toggle-2" checked>
+                <input type="radio" id="choice-form-btn-2" name="fat" value="up-to-10" checked>
                 <label for="choice-form-btn-2">до 10%</label>
-                <input type="radio" id="choice-form-btn-3" name="fat" value="toggle-3">
+                <input type="radio" id="choice-form-btn-3" name="fat" value="up-to-30">
                 <label for="choice-form-btn-3">до 30%</label>
-                <input type="radio" id="choice-form-btn-4" name="fat" value="toggle-4">
+                <input type="radio" id="choice-form-btn-4" name="fat" value="over-30">
                 <label for="choice-form-btn-4">выше 30%</label>
               </fieldset>
               <fieldset class="choice-form-item">
