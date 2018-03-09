@@ -13,7 +13,7 @@
       <nav class="main-menu">
         <ul class="site-navigation">
           <li class="opened">
-            <a href="/catalog.html">Каталог</a>
+            <a href="catalog.html">Каталог</a>
             <ul class="sub-menu">
               <li>
                 <a href="#"><b>Новинки</b></a>
@@ -33,13 +33,13 @@
 
           <section class="modal modal-search">
           <h2 class="visually-hidden">Поле поиска</h2>
-            <form class="modal-search-form" action="#" method="post">
+            <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="post">
             <label for="search">Поле поиска</label>
             <input type="search" id="search" placeholder="Что ищем?">
             <button class="visually-hidden" type="submit">Поиск
             </button>
             </form>
-          <button class="button" type="button">x</button>
+          <button class="modal-close" type="button">Закрыть</button>
           </section>
 
         </li>
@@ -48,7 +48,7 @@
 
           <section class="modal modal-sign-in">
           <h2 class="visually-hidden">Регистрация</h2>
-          <form class="modal-feedback-form" action="#" method="post">
+          <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="post">
             <label for="modal-sign-in-email">Электронная почта</label>
             <input type="email" id="modal-sign-in-email" placeholder="Электронная почта">
             <label for="password">Пароль</label>
@@ -57,7 +57,6 @@
           </form>
           <a class="modal-sign-in-link" href="#">Забыли пароль?</a>
           <a class="modal-sign-in-link" href="#">Новая регистрация</a>
-          <!-- Ссылки на форму регистрации -->
           </section>
 
         </li>
@@ -76,20 +75,20 @@
             <div class="slider">
               <div class="slider-inner">
                     <div class="slider-slides">
-                      <!--Картинки и слайдер позже-->
+                      <!--слайдер позже-->
                         <img src="img/main_layer_1.png" alt="Крем-брюле и пломбир с малиновым джемом">
                         <img src="img/main_layer_2.png" alt="Шоколадный пломбир и лимонный сорбет">
                         <img src="img/main_layer_3.png" alt="Пломбир с помадкой и клубничный щербет">
-                      <!--Картинки и слайдер позже-->
+                      <!--слайдер позже-->
                     </div>
               </div>
                 <input type="radio" id="btn-1" name="toggle" checked>
                 <input type="radio" id="btn-2" name="toggle">
                 <input type="radio" id="btn-3" name="toggle">
                 <div class="slider-controls">
-                    <label for="btn-1"></label>
-                    <label for="btn-2"></label>
-                    <label for="btn-3"></label>
+                    <label for="btn-1">Крем-брюле и пломбир с малиновым джемом</label>
+                    <label for="btn-2">Шоколадный пломбир и лимонный сорбет</label>
+                    <label for="btn-3">Пломбир с помадкой и клубничный щербет</label>
                 </div>
                 <!--Картинки и слайдер позже-->
             </div>
@@ -112,34 +111,48 @@
 
       <section class="hits">
         <h2 class="visually-hidden">Хиты продаж</h2>
-          <article class="hits-item">
-            <h3 class="visually-hidden">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-            <img src="img/ice-cream_orange-jam.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
-            <!--надпись ХИТ! добавляем в CSS-->
-            <p class="price">310 &#8381; <span class="weight">/кг</span></p>
-            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          </article>
-          <article class="hits-item">
-            <h3 class="visually-hidden">Сливочно-кофейное с кусочками шоколада</h3>
-            <img src="img/ice-cream-coffee.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
-            <!--надпись ХИТ! добавляем в CSS-->
-            <p class="price">380 &#8381; <span class="weight">/кг</span></p>
-            <p>Сливочно-кофейное с кусочками шоколада</p>
-          </article>
-          <article class="hits-item">
-            <h3 class="visually-hidden">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-            <img src="img/ice-cream-strawberry.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
-            <!--надпись ХИТ! добавляем в CSS-->
-            <p class="price">355 &#8381; <span class="weight">/кг</span></p>
-            <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
-          </article>
-          <article class="hits-item">
-            <h3 class="visually-hidden">Сливочное крем-брюле с карамельной подливкой</h3>
-            <img src="img/ice-cream-cream-brulee.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
-            <!--надпись ХИТ! добавляем в CSS-->
-            <p class="price">415 &#8381; <span class="weight">/кг</span></p>
-            <p>Сливочное крем-брюле с карамельной подливкой</p>
-          </article>
+        <ul>
+          <li>
+            <a href="catalog.html">
+              <article class="hits-item">
+              <h3 class="visually-hidden">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+                <img src="img/ice-cream_orange-jam.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+                <p class="price">310 &#8381; <span class="weight">/кг</span></p>
+                <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="catalog.html">
+              <article class="hits-item">
+              <h3 class="visually-hidden">Сливочно-кофейное с кусочками шоколада</h3>
+                <img src="img/ice-cream-coffee.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
+                <p class="price">380 &#8381; <span class="weight">/кг</span></p>
+                <p>Сливочно-кофейное с кусочками шоколада</p>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="catalog.html">
+              <article class="hits-item">
+              <h3 class="visually-hidden">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+                <img src="img/ice-cream-strawberry.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
+                <p class="price">355 &#8381; <span class="weight">/кг</span></p>
+                <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="catalog.html">
+              <article class="hits-item">
+              <h3 class="visually-hidden">Сливочное крем-брюле с карамельной подливкой</h3>
+                <img src="img/ice-cream-cream-brulee.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
+                <p class="price">415 &#8381; <span class="weight">/кг</span></p>
+                <p>Сливочное крем-брюле с карамельной подливкой</p>
+              </article>
+            </a>
+          </li>
+        </ul>
       </section>
 
       <section class="features">
@@ -150,7 +163,7 @@
             <p>Все наше мороженое изготавливается на&nbsp;собственном производстве, c&nbsp;использованием современного оборудования и&nbsp;проверенных временем технологий.</p>
           </li>
           <li class="feature-item">
-            <p>&gt;Для приготовления мороженого используются настоящие сливки и&nbsp;молоко высочайшего качества. Все дополнительные ингредиенты и&nbsp;добавки произведены из&nbsp;натурального, экологически чистого сырья.</p>
+            <p>Для приготовления мороженого используются настоящие сливки и&nbsp;молоко высочайшего качества. Все дополнительные ингредиенты и&nbsp;добавки произведены из&nbsp;натурального, экологически чистого сырья.</p>
           </li>
           <li class="feature-item">
             <p>Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств и&nbsp;компаний, с&nbsp;которыми нас связывает долговременное сотрудничество.</p>
@@ -173,7 +186,7 @@
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
         <div class="subscription">
-          <form class="mailing-form" action="#" method="post">
+          <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
             <label for="email">Email</label>
             <input type="email" id="email" placeholder="Электронная почта">
             <button class="button" type="submit">Отправить</button>
@@ -184,8 +197,8 @@
       <section class="map-and-feedback">
         <h2 class="visually-hidden">Как с нами связаться</h2>
         <div class="map">
-          <img src="img/layer_map.jpg" alt="Карта" width="1250" height="430">
-          <!--Интерактивная карта?-->
+          <img src="img/layer_map.jpg" alt="Адрес главного офиса и офлайн-магазина:ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1250" height="430">
+          <!--Интерактивная карта-->
         </div>
         <div class="adress-and-feedback">
           <p>Адрес главного офиса и офлайн-магазина:
@@ -206,10 +219,10 @@
           <a class="social-button social-button-vk" href="#">Вконтакте</a>
         </div>
         <ul class="footer-menu">
-          <li class="footer-menu-item">Для поставщиков</li>
-          <li class="footer-menu-item">О производстве</li>
-          <li class="footer-menu-item">Наши документы</li>
-          <li class="footer-menu-item">Экологические стандарты</li>
+          <li class="footer-menu-item"><a class="footer-menu-item" href="#">Для поставщиков</a></li>
+          <li class="footer-menu-item"><a class="footer-menu-item" href="#">О производстве</a></li>
+          <li class="footer-menu-item"><a class="footer-menu-item" href="#">Наши документы</a></li>
+          <li class="footer-menu-item"><a class="footer-menu-item" href="#">Экологические стандарты</a></li>
         </ul>
         <div class="copyright">
           <a class="main-footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
@@ -231,7 +244,7 @@
         <textarea id="note" name="note" placeholder="Напишите что-нибудь..."></textarea>
         <button class="button" type="submit">Отправить</button>
       </form>
-        <button class="button" type="button">x</button>
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
 
   </body>
