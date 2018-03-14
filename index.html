@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>GllacyShop-магазин мороженого</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -12,7 +14,7 @@
       </a>
       <nav class="main-menu">
         <ul class="site-navigation">
-          <li class="opened">
+          <li class="site-navigation-item opened">
             <a href="catalog.html">Каталог</a>
             <ul class="sub-menu">
               <li>
@@ -24,8 +26,8 @@
               <li><a href="#">Мелорин</a></li>
             </ul>
           </li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О Компании</a></li>
+          <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
+          <li class="site-navigation-item"><a href="#">О Компании</a></li>
         </ul>
       </nav>
       <ul class="user-navigation">
@@ -64,7 +66,7 @@
         <li class="header-cart empty"><a href="#">Пусто</a></li>
       </ul>
       <span class="working-hours">С 10 до 20, ежедневно</span>
-      <a href="tel:88124502525">8 812 450-25-25</a>
+      <p class="contact-phone"><a  href="tel:88124502525">8 812 450-25-25</a></p>
     </header>
 
     <main class="container">
@@ -164,12 +166,13 @@
         <h2 class="visually-hidden">Блог</h2>
         <p>Новое в нашем блоге</p>
         <a class="blog-preview" href="#">
-          <p>10 способов сервировки фруктовых щербетов к столу</p>
+          <b>10 способов сервировки фруктовых щербетов к столу</b>
         </a>
       </section>
 
       <section class="subscription-box">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
+        <div class="wrapper">
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
         <div class="subscription">
           <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
@@ -177,6 +180,7 @@
             <input type="email" id="email" placeholder="Электронная почта">
             <button class="button" type="submit">Отправить</button>
           </form>
+        </div>
         </div>
       </section>
 
@@ -190,7 +194,7 @@
           <p>Адрес главного офиса и офлайн-магазина:
           <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
           <p>Для заказов по телефону:
-          <a href="tel:88124502525">8 812 450-25-25</a>
+          <a class="contact-phone" href="tel:88124502525">8 812 450-25-25</a>
           (с 10 до 20 ежедневно)</p>
           <a class="button" href="#">Форма обратной связи</a>
         </div>
@@ -205,16 +209,16 @@
           <a class="social-button social-button-vk" href="#">Вконтакте</a>
         </div>
         <ul class="footer-menu">
-          <li class="footer-menu-item"><a class="footer-menu-item" href="#">Для поставщиков</a></li>
-          <li class="footer-menu-item"><a class="footer-menu-item" href="#">О производстве</a></li>
-          <li class="footer-menu-item"><a class="footer-menu-item" href="#">Наши документы</a></li>
-          <li class="footer-menu-item"><a class="footer-menu-item" href="#">Экологические стандарты</a></li>
+          <li><a class="footer-menu-item" href="#">Для поставщиков</a></li>
+          <li><a class="footer-menu-item" href="#">О производстве</a></li>
+          <li><a class="footer-menu-item" href="#">Наши документы</a></li>
+          <li><a class="footer-menu-item" href="#">Экологические стандарты</a></li>
         </ul>
         <div class="copyright">
           <a class="main-footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-htmlacademy.svg" alt="Логотип HTMLacademy" width="108" height="39">
           </a>
-          <p>Сделано в HTML Academy &copy; 2017</p>
+          <p>Сделано в <a class="main-footer-button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
         </div>
     </footer>
 
