@@ -174,7 +174,7 @@ a {
 
   background-color: rgba(255, 255, 255, 0.2);
 }
-
+.inner-page__choice-form__select__item,
 .inner-page__choice-form__select:hover {
   color: #323232;
 
