@@ -33,7 +33,8 @@
           </ul>
 
           <ul class="main-menu__user-navigation">
-            <li class="main-menu__user-navigation__header-search"><a class="main-menu__user-navigation__header-search__link" href="#">Поиск</a>
+            <li class="main-menu__user-navigation__header-search">
+              <a class="main-menu__user-navigation__header-search__link" href="#">Поиск</a>
 
             <section class="modal modal__search">
             <h2 class="visually-hidden">Поле поиска</h2>
@@ -81,29 +82,29 @@
       <h1 class="visually-hidden">Магазин мороженого Glaccy</h1>
 
       <section class="all-the-best">
-        <h2 class="visually-hidden">Лучшие предложения</h2>
-        <div class="slider">
-          <div class="slider__inner">
-                <div class="slider__inner__slides">
-                  <!--слайдер позже-->
-                    <img src="img/main_layer_1.png" alt="Крем-брюле и пломбир с малиновым джемом">
-                    <img src="img/main_layer_2.png" alt="Шоколадный пломбир и лимонный сорбет">
-                    <img src="img/main_layer_3.png" alt="Пломбир с помадкой и клубничный щербет">
-                  <!--слайдер позже-->
-                </div>
-          </div>
-            <input type="radio" id="btn-1" name="toggle" checked>
-            <input type="radio" id="btn-2" name="toggle">
-            <input type="radio" id="btn-3" name="toggle">
+        <div class="all-the-best__wrapper">
+          <h2 class="visually-hidden">Лучшие предложения</h2>
+          <div class="slider">
             <div class="slider__controls">
-                <label for="btn-1">Крем-брюле и пломбир с малиновым джемом</label>
-                <label for="btn-2">Шоколадный пломбир и лимонный сорбет</label>
-                <label for="btn-3">Пломбир с помадкой и клубничный щербет</label>
+                  <label class="visually-hidden" for="btn-1">Крем-брюле и пломбир с малиновым джемом</label>
+                  <label class="visually-hidden" for="btn-2">Шоколадный пломбир и лимонный сорбет</label>
+                  <label class="visually-hidden" for="btn-3">Пломбир с помадкой и клубничный щербет</label>
             </div>
-            <!--Картинки и слайдер позже-->
+              <input class="visually-hidden slider__input" type="radio" id="btn-1" name="toggle" checked>
+              <input class="visually-hidden slider__input" type="radio" id="btn-2" name="toggle">
+              <input class="visually-hidden slider__input" type="radio" id="btn-3" name="toggle">
+            <div class="slider-item slider-item--active slider-item__brulee-and-raspberry">
+              <p>Крем-брюле и пломбир с малиновым джемом</p>
+            </div>
+            <div class="slider-item slider-item__chocolate-and-lemon">
+              <p>Шоколадный пломбир и лимонный сорбет</p>
+            </div>
+            <div class="slider-item slider-item__strawberry">
+              <p>Пломбир с помадкой и клубничный щербет</p>
+            </div>
+          </div>
+          <a class="button slider__button" href="#">Давайте оба!</a>
         </div>
-        <a class="button slider__button" href="#">Давайте оба!</a>
-
       </section>
 
       <section class="promo">
@@ -150,7 +151,7 @@
             <article>
               <img src="img/ice-cream-cream-brulee.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
               <p class="hits-item__price">415 &#8381; <span class="weight">/кг</span></p>
-              <h3 class="catalog-item-description">Сливочное крем-брюле с карамельной подливкой</h3>
+              <h3 class="catalog-item-description">Cливочное крем-брюле с карамельной подливкой</h3>
             </article>
           </a>
         </div>
@@ -195,7 +196,7 @@
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
               <div class="subscription">
                 <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
-                  <label for="email">Email</label>
+                  <label class="visually-hidden" for="email">Email</label>
                   <input class="input__text" type="email" id="email" placeholder="Электронная почта">
                   <button class="button" type="submit">Отправить</button>
                 </form>
@@ -206,18 +207,18 @@
      </div>
 
       <section class="map-and-feedback">
-        <div class="map-and-feedback__container"></div>
+        <div class="map-and-feedback__container">
           <h2 class="visually-hidden">Как с нами связаться</h2>
           <div class="map">
-            <img src="img/layer_map.jpg" alt="Адрес главного офиса и офлайн-магазина:ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1250" height="430">
+            <p><img src="img/layer_map.jpg" alt="Адрес главного офиса и офлайн-магазина:ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1250" height="430"></p>
             <!--Интерактивная карта-->
           </div>
           <div class="adress-and-feedback">
             <p>Адрес главного офиса и офлайн-магазина:
-            <span class="adress-and-feedback--big">ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
+            <span class="adress-and-feedback--big">ул.&nbsp;Большая&nbsp;Конюшенная 19/8, Санкт-Петербург</span></p>
             <p>Для заказов по телефону:
-            <a class="adress-and-feedback--big"" href="tel:88124502525">8 812 450-25-25</a>
-            (с 10 до 20 ежедневно)</p>
+            <a class="adress-and-feedback--big"" href="tel:88124502525">8&nbsp;812&nbsp;450-25-25</a>
+            (с&nbsp;10&nbsp;до&nbsp;20&nbsp;ежедневно)</p>
             <a class="button" href="#">Форма обратной связи</a>
           </div>
         </div>
@@ -234,10 +235,14 @@
           <a class="main-footer__social__button main-footer__social__button__vk" href="#">Вконтакте</a>
         </div>
         <ul class="main-footer__menu">
-          <li class="main-footer__menu__item--bold"><a class="main-footer__menu__link " href="#">Для поставщиков</a></li>
-          <li><a class="main-footer__menu__link" href="#">Наши документы</a></li>
-          <li><a class="main-footer__menu__link" href="#">О производстве</a></li>
-          <li><a class="main-footer__menu__link" href="#">Экологические стандарты</a></li>
+          <div class="left__wrapper">
+            <li class="main-footer__menu__item--bold"><a class="main-footer__menu__link " href="#">Для поставщиков</a></li>
+            <li><a class="main-footer__menu__link" href="#">О производстве</a></li>
+          </div>
+          <div class="right__wrapper">
+            <li><a class="main-footer__menu__link" href="#">Наши документы</a></li>
+            <li><a class="main-footer__menu__link" href="#">Экологические стандарты</a></li>
+          </div>
         </ul>
         <div class="main-footer__copyright">
           <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/htmlcss">
