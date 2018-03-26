@@ -16,7 +16,18 @@
           </a>
           <div class="main-menu__container">
             <ul class="main-menu__site-navigation">
-              <li class="main-menu__site-navigation__item main-menu__site-navigation__item--active"><a class="main-menu__site-navigation__item__link--active" href="#">Каталог</a></li>
+              <li class="main-menu__site-navigation__item main-menu__site-navigation__item--opened main-menu__site-navigation__item--active">
+                <a class="main-menu__site-navigation__item__link main-menu__site-navigation__item__link--selected" href="catalog.html">Каталог</a>
+                <ul class="main-menu__site-navigation__item__sub-menu">
+                  <li>
+                    <a class="main-menu__site-navigation__item__sub-menu__link main-menu__site-navigation__item__sub-menu__link--bold" href="#"><b>Новинки</b></a>
+                  </li>
+                  <li><a class="main-menu__site-navigation__item__sub-menu__link" href="catalog.html">Сливочное</a></li>
+                  <li><a class="main-menu__site-navigation__item__sub-menu__link" href="#">Щербеты</a></li>
+                  <li><a class="main-menu__site-navigation__item__sub-menu__link" href="#">Фруктовый лед</a></li>
+                  <li><a class="main-menu__site-navigation__item__sub-menu__link" href="#">Мелорин</a></li>
+                </ul>
+              </li>
               <li class="main-menu__site-navigation__item"><a class="main-menu__site-navigation__item__link" href="#">Доставка и оплата</a></li>
               <li class="main-menu__site-navigation__item"><a class="main-menu__site-navigation__item__link" href="#">О Компании</a></li>
             </ul>
@@ -79,7 +90,7 @@
                       <p class="modal-cart__price">1,5кг х<span class="modal-cart__price-count">200 руб.</span></p>
                       <p class="price-per-weight">300 руб.</p>
                     </div>
-                    <div class="row-2">
+                    <div class="row-1">
                       <button class="modal__cart__delete-item" type="button">
 
                       </button>
@@ -108,13 +119,19 @@
 
     <main>
       <div class="container">
-        <div class="breadcrumbs">
+          <ul class="breadcrumbs">
+            <li>
               <a class="breadcrumbs__link" href="index.html">Главная</a>
               <span class="section__breadcrumbs">&raquo;</span>
+            </li>
+            <li>
               <a class="breadcrumbs__link" href="#">Каталог</a>
               <span class="section__breadcrumbs">&raquo;</span>
-              <a class="breadcrumbs__link breadcrumbs__link--active" href="#">Сливочное</a>
-        </div>
+            </li>
+            <li>
+              <p class="breadcrumbs__link--active" href="#">Сливочное</p>
+            </li>
+        </ul>
         <h1 class="header">Сливочное мороженое</h1>
 
         <section class="choice">
@@ -130,59 +147,66 @@
                     <option class="choice-form__select__item" value="expensive">сначала дорогие</option>
                     <option class="choice-form__select__item" value="fat-range">по жирности</option>
                   </select>
+                  <svg class="select-arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                    <polyline fill="currentColor" points="5.5,10 0,0 11,0 "/>
+                  </svg>
                 </fieldset>
 
                 <fieldset class="choice-form-item">
-                  <p>Цена:</p>
-                  <label class="visually-hidden" for="lowest-price">Наименьшая цена</label>
-                  <input  type="text" id="lowest-price" value="lowest-price">
-                  <p>руб.&ndash;</p>
-                  <label class="visually-hidden" for="highest-price">Наибольшая цена</label>
-                  <input type="text" id="highest-price" value="highest-price">
-                  <p>руб.</p>
-                  <div class="choice-form-item__price-range">
-                    <!-- Здесь будут ползунки
-                    <input type="range" id="range-price" name="range-price" min="0" max="800" step="100">
-                    -->
-                  </div>
+                  <legend class="choice-form__price">Цена:
+                    <div class="price-controls">
+                      <label class="visually-hidden min-price" for="lowest-price">Наименьшая цена</label>
+                      <input  type="text" id="lowest-price" value="0">
+                      <p class="price-controls__label">руб.&ndash;</p>
+                      <label class="visually-hidden max-price" for="highest-price">Наибольшая цена</label>
+                      <input type="text" id="highest-price" value="500">
+                      <p class="price-controls__label">руб.</p>
+                    </div>
+                  </legend>
+                    <div class="choice-form-item__range-filter">
+                      <div class="range-controls">
+                        <div class="scale">
+                          <div class="bar" style="margin-left: 0%; width: 45%"></div>
+                        </div>
+                        <div class="toggle toggle-min"></div>
+                        <div class="toggle toggle-max"></div>
+                       </div>
+                    </div>
                 </fieldset>
 
                 <fieldset class="choice-form-item">
-                  <legend>Жирность:</legend>
+                  <legend class="choice-form__fat">Жирность:</legend>
                   <div class="choice-form__radio__wrapper">
                     <input class="choice-form__radio" type="radio" id="choice-form-btn-1" name="fat" value="0">
-                    <label class="choice-form__label" for="choice-form-btn-1">0%</label>
+                    <label class="choice-form__label choice-form__radio__label" for="choice-form-btn-1">0%</label>
                     <input class="choice-form__radio" type="radio" id="choice-form-btn-2" name="fat" value="up-to-10" checked>
-                    <label class="choice-form__label" for="choice-form-btn-2">до 10%</label>
+                    <label class="choice-form__label choice-form__radio__label" for="choice-form-btn-2">до 10%</label>
                     <input class="choice-form__radio" type="radio" id="choice-form-btn-3" name="fat" value="up-to-30">
-                    <label class="choice-form__label" for="choice-form-btn-3">до 30%</label>
+                    <label class="choice-form__label choice-form__radio__label" for="choice-form-btn-3">до 30%</label>
                     <input class="choice-form__radio" type="radio" id="choice-form-btn-4" name="fat" value="over-30">
-                    <label class="choice-form__label" for="choice-form-btn-4">выше 30%</label>
+                    <label class="choice-form__label choice-form__radio__label" for="choice-form-btn-4">выше 30%</label>
                   </div>
                 </fieldset>
                 <fieldset class="choice-form-item">
-                  <p>Наполнители:</p>
+                  <legend class="choice-form__inner">Наполнители:</legend>
                   <div class="choice-form__checkbox__wrapper">
-                  <div>
+
                       <input class="choice-form__checkbox" type="checkbox" id="chocolate" name="chocolate" value="chocolate" checked>
-                      <label class="choice-form__label" for="chocolate">шоколадные</label>
-                  </div>
-                  <div>
-                      <input type="checkbox" id="sugar" name="filler" value="sugar" checked>
-                      <label class="choice-form__label" for="sugar">сахарные присыпки</label>
-                  </div>
-                  <div>
-                      <input type="checkbox" id="fruits" name="filler" value="fruits">
-                      <label class="choice-form__label" for="fruits">фрукты</label>
-                  </div>
-                  <div>
-                      <input type="checkbox" id="syrup" name="filler" value="syrup">
-                      <label class="choice-form__label" for="syrup">сиропы</label>
-                  </div>
-                  <div>
-                      <input type="checkbox" id="jam" name="filler" value="jam">
-                      <label class="choice-form__label" for="jam">джемы</label>
-                  </div>
+                      <label class="choice-form__label choice-form__checkbox__label" for="chocolate">шоколадные</label>
+
+                      <input class="choice-form__checkbox" type="checkbox" id="sugar" name="filler" value="sugar" checked>
+                      <label class="choice-form__label choice-form__checkbox__label" for="sugar">сахарные присыпки</label>
+
+                      <input class="choice-form__checkbox" type="checkbox" id="fruits" name="filler" value="fruits">
+                      <label class="choice-form__label choice-form__checkbox__label" for="fruits">фрукты</label>
+
+                      <input class="choice-form__checkbox" type="checkbox" id="syrup" name="filler" value="syrup">
+                      <label class="choice-form__label choice-form__checkbox__label" for="syrup">сиропы</label>
+
+                      <input class="choice-form__checkbox" type="checkbox" id="jam" name="filler" value="jam">
+                      <label class="choice-form__label choice-form__checkbox__label" for="jam">джемы</label>
+
                 </div>
                 </fieldset>
                 <button class="choice-form__sort-button" type="submit">Применить</button>
