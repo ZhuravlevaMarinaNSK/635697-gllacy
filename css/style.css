@@ -53,7 +53,7 @@ img {
           box-sizing: border-box;
   width: 1200px;
   margin: 0 auto;
-  padding: 0 26px;
+  padding: 0 25px;
 }
 
 .main-menu__container {
@@ -86,7 +86,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 370px;
+  min-width: 377px;
 }
 
 .main-menu__user-navigation {
@@ -146,7 +146,7 @@ img {
 }
 .main-menu__site-navigation__item:hover,
 .main-menu__site-navigation__item:focus {
-  padding: 7px 15px;
+  padding: 8px 13px;
 
   color: #333333;
 
@@ -165,8 +165,7 @@ img {
 
 .main-menu__site-navigation__item,
 .main-menu__site-navigation__item--active {
-  padding-right: 13px;
-  padding-left: 15px;
+  padding:8px 13px;
 }
 
 .main-menu__site-navigation__item:active,
@@ -486,7 +485,7 @@ img {
 
 .main-menu__user-navigation__header-cart__link--two-goods {
   color: #000000;
-  padding-right: 20px;
+  padding-right: 13px;
   padding-left: 43px;
   padding-bottom: 8px;
   padding-top: 7px;
@@ -513,6 +512,7 @@ img {
 
 .main-menu__user-navigation__header-cart {
   position: relative;
+  min-width: 120px;
 }
 
 .main-menu__user-navigation__header-cart:hover .modal__cart {
@@ -841,7 +841,7 @@ img {
 }
 
 .choice-form {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 
   font-weight: 500;
   font-size: 14px;
@@ -917,6 +917,9 @@ img {
   cursor: pointer;
 
   -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
 }
 
 .choice-form__select:hover,
@@ -1485,9 +1488,14 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 }
 
 .width {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .paginator {
@@ -1600,7 +1608,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 38px;
+  margin-bottom: 45px;
 }
 
 .catalog-item {
@@ -1693,6 +1701,14 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
   text-align: left;
 }
 
+.weight::before {
+  content: "";
+  display: inline-block;
+  height: 33px;
+  width: 28px;
+  background-image: url("../img/ruble.svg");
+}
+
 .weight {
   font-size: 30px;
   padding-left: 3px;
@@ -1701,7 +1717,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 .catalog-item-description {
   display: inline; /* делаем строчным элементом*/
   position: relative;
-  top: 5px;
+  top: 10px;
 
   font-weight: 500;
   font-size: 16px;
