@@ -79,7 +79,7 @@
                   <section class="modal modal__cart">
                   <h2 class="visually-hidden">Наполнение корзины</h2>
                     <div class="table">
-                    <div class="row-1">
+                    <div class="row row-1">
                       <button class="modal__cart__delete-item" type="button">
 
                       </button>
@@ -90,7 +90,7 @@
                       <p class="modal-cart__price">1,5кг х<span class="modal-cart__price-count">200 руб.</span></p>
                       <p class="price-per-weight">300 руб.</p>
                     </div>
-                    <div class="row-1">
+                    <div class="row row-2">
                       <button class="modal__cart__delete-item" type="button">
 
                       </button>
@@ -139,7 +139,7 @@
               <h2 class="visually-hidden">Форма выбора</h2>
               <form class="choice-form" action="https://echo.htmlacademy.ru" method="post">
                 <div class="choice-wrapper">
-                <fieldset class="choice-form-item">
+                <fieldset class="choice-form-item choice-form-item__select">
                   <label class="choice-form__label" for="sort">Сортировка:</label>
                   <select class="choice-form__select" id="sort" name="sort">
                     <option class="choice-form__select__item" value="popularity">по популярности</option>
@@ -147,13 +147,14 @@
                     <option class="choice-form__select__item" value="expensive">сначала дорогие</option>
                     <option class="choice-form__select__item" value="fat-range">по жирности</option>
                   </select>
+
                   <svg class="select-arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
                     <polyline fill="currentColor" points="5.5,10 0,0 11,0 "/>
                   </svg>
                 </fieldset>
 
-                <fieldset class="choice-form-item">
+                <fieldset class="choice-form-item choice-form-item__price">
                   <legend class="choice-form__price">Цена:
                     <div class="price-controls">
                       <label class="visually-hidden min-price" for="lowest-price">Наименьшая цена</label>
@@ -188,7 +189,7 @@
                     <label class="choice-form__label choice-form__radio__label" for="choice-form-btn-4">выше 30%</label>
                   </div>
                 </fieldset>
-                <fieldset class="choice-form-item">
+                <fieldset class="choice-form-item choice-form-item__checkbox">
                   <legend class="choice-form__inner">Наполнители:</legend>
                   <div class="choice-form__checkbox__wrapper">
 
@@ -219,7 +220,7 @@
           <div class="catalog__wrapper">
             <article class="catalog-item">
               <img src="img/ice-cream_orange-jam.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
-              <p class="catalog-item__price">310 &#8381;<span>/кг</span></p>
+              <p class="catalog-item__price">310 &#8381;<span class="weight">/кг</span></p>
               <h3 class="catalog-item-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
               <div class="button__wrapper">
                 <a class="button" href="#">Быстрый просмотр</a>
@@ -227,7 +228,7 @@
             </article>
             <article class="catalog-item">
               <img src="img/ice-cream-coffee.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
-              <p class="catalog-item__price">380 &#8381;<span>/кг</span></p>
+              <p class="catalog-item__price">380 &#8381;<span class="weight">/кг</span></p>
               <h3 class="catalog-item-description">Сливочно-кофейное с кусочками шоколада</h3>
               <div class="button__wrapper">
                 <a class="button" href="#">Быстрый просмотр</a>
@@ -235,7 +236,7 @@
             </article>
             <article class="catalog-item">
               <img src="img/ice-cream-strawberry.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
-              <p class="catalog-item__price">355 &#8381;<span>/кг</span></p>
+              <p class="catalog-item__price">355 &#8381;<span class="weight">/кг</span></p>
               <h3 class="catalog-item-description">Сливочно-клубничное с присыпкой из белого шоколада</h3>
               <div class="button__wrapper">
                 <a class="button" href="#">Быстрый просмотр</a>
@@ -243,7 +244,7 @@
             </article>
             <article class="catalog-item">
               <img src="img/ice-cream-cream-brulee.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
-              <p class="catalog-item__price">415 &#8381;<span>/кг</span></p>
+              <p class="catalog-item__price">415 &#8381;<span class="weight">/кг</span></p>
               <h3 class="catalog-item-description">Сливочное крем-брюле с карамельной подливкой</h3>
               <div class="button__wrapper">
                 <a class="button" href="#">Быстрый просмотр</a>
@@ -251,7 +252,7 @@
             </article>
             <article class="catalog-item">
               <img src="img/ice-cream-lingonberry.jpg" alt="Сливочное с брусничным джемом" width="267" height="267">
-              <p class="catalog-item__price">325 &#8381;<span>/кг</span></p>
+              <p class="catalog-item__price">325 &#8381;<span class="weight">/кг</span></p>
               <h3 class="catalog-item-description">Сливочное с брусничным джемом</h3>
               <div class="button__wrapper">
                 <a class="button" href="#">Быстрый просмотр</a>
@@ -259,7 +260,7 @@
             </article>
             <article class="catalog-item">
               <img src="img/ice-cream-bluberry.jpg" alt="Сливочно-черничное с цельными ягодами черники" width="267" height="267">
-              <p class="catalog-item__price">410 &#8381;<span>/кг</span></p>
+              <p class="catalog-item__price">410 &#8381;<span class="weight">/кг</span></p>
               <h3 class="catalog-item-description">Сливочно-черничное с цельными ягодами черники</h3>
               <div class="button__wrapper">
                 <a class="button" href="#">Быстрый просмотр</a>
@@ -267,7 +268,7 @@
             </article>
             <article class="catalog-item">
               <img src="img/ice-cream-lemon.jpg" alt="Сливочно-лимонное с карамельной присыпкой" width="267" height="267">
-              <p class="catalog-item__price">375 &#8381;<span>/кг</span></p>
+              <p class="catalog-item__price">375 &#8381;<span class="weight">/кг</span></p>
               <h3 class="catalog-item-description">Сливочно-лимонное с карамельной присыпкой</h3>
               <div class="button__wrapper">
                 <a class="button" href="#">Быстрый просмотр</a>
@@ -275,7 +276,7 @@
             </article>
             <article class="catalog-item">
               <img src="img/ice-cream-chocolate-chips.jpg" alt="Сливочное с шоколадной стружкой" width="267" height="267">
-              <p class="catalog-item__price">320 &#8381;<span>/кг</span></p>
+              <p class="catalog-item__price">320 &#8381;<span class="weight">/кг</span></p>
               <h3 class="catalog-item-description">Сливочное с шоколадной стружкой</h3>
               <div class="button__wrapper">
                 <a class="button" href="#">Быстрый просмотр</a>
@@ -283,15 +284,15 @@
             </article>
             <article class="catalog-item">
               <img src="img/ice-cream-vanilla-chocolate.jpg" alt="Сливочно-ванильное с кусочками шоколада" width="267" height="267">
-              <p class="catalog-item__price">440 &#8381;<span>/кг</span></p>
-              <h3 class="catalog-item-description">Сливочно-ванильное с кусочками шоколада</h3>
+              <p class="catalog-item__price">440 &#8381;<span class="weight">/кг</span></p>
+              <h3 class="catalog-item-description">Сливочно-ванильное с<br> кусочками шоколада</h3>
               <div class="button__wrapper">
                 <a class="button" href="#">Быстрый просмотр</a>
               </div>
             </article>
             <article class="catalog-item">
               <img src="img/ice-cream-menthol.jpg" alt="Сливочноe с ментоловым сиропом" width="267" height="267">
-              <p class="catalog-item__price">435 &#8381;<span>/кг</span></p>
+              <p class="catalog-item__price">435 &#8381;<span class="weight">/кг</span></p>
               <h3 class="catalog-item-description">Сливочноe с ментоловым сиропом</h3>
               <div class="button__wrapper">
                 <a class="button" href="#">Быстрый просмотр</a>
@@ -299,7 +300,7 @@
             </article>
             <article class="catalog-item">
               <img src="img/ice-cream-chocolate-pieces.jpg" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
-              <p class="catalog-item__price">355 &#8381;<span>/кг</span></p>
+              <p class="catalog-item__price">355 &#8381;<span class="weight">/кг</span></p>
               <h3 class="catalog-item-description">Сливочное с кусочками черного шоколада</h3>
               <div class="button__wrapper">
                 <a class="button" href="#">Быстрый просмотр</a>
@@ -307,7 +308,7 @@
             </article>
             <article class="catalog-item">
               <img src="img/ice-cream-mint.jpg" alt="Сливочное с мятным сиропом" width="267" height="267">
-              <p class="catalog-item__price">420 &#8381;<span>/кг</span></p>
+              <p class="catalog-item__price">420 &#8381;<span class="weight">/кг</span></p>
               <h3 class="catalog-item-description">Сливочное с мятным сиропом</h3>
               <div class="button__wrapper">
                 <a class="button" href="#">Быстрый просмотр</a>
@@ -317,13 +318,15 @@
 
           <ul class="paginator">
             <div class="paginator__wrapper">
-              <li class="paginator__item--prev"><a class="paginator__link paginator__link--prev" href="#">Назад</a></li>
-              <li class="paginator__item--current"><a class="paginator__link paginator__link--current" href="#">1</a></li>
-              <li class="paginator__item"><a class="paginator__link" href="#">2</a></li>
-              <li class="paginator__item"><a class="paginator__link" href="#">3</a></li>
-              <li class="paginator__item"><a class="paginator__link" href="#">4</a></li>
-              <li class="paginator__item"><a class="paginator__link" href="#">5</a></li>
-              <li class="paginator__item--next"><a class="paginator__link paginator__link--next" href="#">Вперёд</a></li>
+              <div class="width">
+                <li class="paginator__item--prev"><a class="paginator__link paginator__link--prev" href="#">Назад</a></li>
+                <li class="paginator__item--current"><a class="paginator__link paginator__link--current" href="#">1</a></li>
+                <li class="paginator__item"><a class="paginator__link" href="#">2</a></li>
+                <li class="paginator__item"><a class="paginator__link" href="#">3</a></li>
+                <li class="paginator__item"><a class="paginator__link" href="#">4</a></li>
+                <li class="paginator__item"><a class="paginator__link" href="#">5</a></li>
+                <li class="paginator__item--next"><a class="paginator__link paginator__link--next" href="#">Вперёд</a></li>
+            </div>
             </div>
           </ul>
 
