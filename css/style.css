@@ -922,6 +922,10 @@ img {
   appearance: none;
 }
 
+.choice-form__select::-ms-expand {
+display: none;
+}
+
 .choice-form__select:hover,
 .choice-form__select:focus,
 .choice-form-item:hover .select-arrow {
