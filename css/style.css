@@ -65,8 +65,8 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 986px;
-  margin-top: 15px;
-  margin-bottom: 23px;
+  margin-top: 6px;
+  margin-bottom: 14px;
 
   font-weight: 700;
   line-height: 18px;
@@ -77,19 +77,24 @@ img {
 }
 
 .main-menu__site-navigation {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
       flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  min-width: 377px;
+  min-width: 379px;
 
   -webkit-box-align: center;
   -webkit-box-pack: justify;
   -ms-flex-align: center;
   -ms-flex-pack: justify;
   -ms-flex-wrap: wrap;
+}
+
+.main-menu__site-navigation .link-border {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .main-menu__user-navigation {
@@ -141,29 +146,42 @@ img {
 }
 
 .main-menu__site-navigation__item__link {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+
+  padding: 8px 9px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  vertical-align: baseline;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 16px;
+  outline: none;
 }
 
 .main-menu__site-navigation__item:hover .main-menu__site-navigation__item__link--active {
   color: #333333;
 }
 
-.main-menu__site-navigation__item:hover,
-.main-menu__site-navigation__item:focus {
-  padding: 8px 13px;
-
+.main-menu__site-navigation__item__link:hover,
+.main-menu__site-navigation__item__link:focus {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
   color: #333333;
+  background-color: #ffffff;
+}
 
-  background-color: #f8f7f4;
-  border-radius: 15px;
+.main-menu__site-navigation__item__link:hover .link-border,
+.main-menu__site-navigation__item__link:focus .link-border,
+.main-menu__site-navigation__item__link:active .link-border,
+.main-menu__site-navigation__item__link--selected .link-border {
+  border-color: transparent;
 }
 
 .main-menu__site-navigation__item:hover .main-menu__site-navigation__item__link,
 .main-menu__site-navigation__item:focus .main-menu__site-navigation__item__link {
-  padding-bottom: 10px;
-
   color: #333333;
 
   border: none;
@@ -174,13 +192,13 @@ img {
   display: inline-block;
   vertical-align: middle;
   max-width: 170px;
-  padding: 8px 13px;
+  padding: 8px 4px;
 
   word-wrap: break-word;
   word-break: break-all;
 }
 
-.main-menu__user-navigation__item a {
+.main-menu__user-navigation__item {
   display: inline-block;
   vertical-align: middle;
   max-width: 170px;
@@ -189,18 +207,20 @@ img {
   word-break: break-all;
 }
 
-.main-menu__site-navigation__item:active,
-.main-menu__site-navigation__item--selected:active {
+.main-menu__site-navigation__item a:active,
+.main-menu__site-navigation__item--selected a:active {
   color: #333333;
 
   background-color: #f8f7f4;
+  padding: 8px 9px;
+  border-radius: 15px;
   -webkit-box-shadow: inset 0 2px 1px #696969;
   -ms-box-shadow: inset 0 2px 1px #696969;
   -moz-box-shadow: inset 0 2px 1px #696969;
           box-shadow: inset 0 2px 1px #696969;
 }
 
-.main-menu__site-navigation__item--active {
+.main-menu__site-navigation__item__link--selected {
   position: relative;
 
   padding: 8px 13px;
@@ -299,7 +319,7 @@ img {
 
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 8px;
+  padding-top: 6px;
   padding-right: 16px;
   padding-bottom: 10px;
   padding-left: 42px;
@@ -314,9 +334,9 @@ img {
 
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 8px;
+  padding-top: 7px;
   padding-right: 36px;
-  padding-bottom: 6px;
+  padding-bottom: 10px;
   padding-left: 45px;
 
   color: #ffffff;
@@ -389,23 +409,53 @@ img {
   position: relative;
 }
 
-.main-menu__user-navigation__header-search:hover svg,
-.main-menu__user-navigation__header-sign-in__item:hover .main-menu__user-navigation__header-sign-in__link,
-.main-menu__user-navigation__header-sign-in__item:hover svg {
-  padding-bottom: 10px;
-}
-
 .main-menu__user-navigation__header-sign-in__item:hover .modal__sign-in,
 .main-menu__user-navigation__header-sign-in__item:focus .modal__sign-in {
   position: absolute;
-  top: 36px;
-  right: -4px;
+  top: 28px;
+  right: -2px;
   z-index: 3;
 
   display: block;
   width: 277px;
 
   background-color: #f8f7f4;
+}
+
+.main-menu__user-navigation__header-search::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  z-index: 3;
+
+  bottom: -15px;
+  right: 0;
+  display: block;
+}
+
+.main-menu__user-navigation__header-sign-in__item::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 15px;
+  z-index: 3;
+
+  bottom: -15px;
+  right: 0;
+  display: block;
+}
+
+.main-menu__user-navigation__header-cart::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 15px;
+  z-index: 3;
+
+  bottom: -15px;
+  right: 0;
+  display: block;
 }
 
 .modal__sign-in {
@@ -532,10 +582,6 @@ img {
   height: 20px;
 
   background: url(../img/basket-red.svg) no-repeat;
-}
-
-.main-menu__user-navigation__header-cart:hover .main-menu__user-navigation__header-cart__link--two-goods {
-  padding-bottom: 18px;
 }
 
 .main-menu__user-navigation__header-cart {
@@ -2328,7 +2374,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 }
 
 
-.visually-hidden:not(:focus):not(:active),
+.visually-hidden:not(:focus),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
