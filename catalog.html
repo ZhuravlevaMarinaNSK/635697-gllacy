@@ -127,7 +127,7 @@
               <span class="section__breadcrumbs">&raquo;</span>
             </li>
             <li>
-              <p class="breadcrumbs__link--active" href="#">Сливочное</p>
+              <p class="breadcrumbs__link--active">Сливочное</p>
             </li>
         </ul>
         <h1 class="header">Сливочное мороженое</h1>
@@ -154,14 +154,14 @@
 
                 <fieldset class="choice-form-item choice-form-item__price">
                   <legend class="choice-form__price">Цена:
-                    <div class="price-controls">
+                    <span class="price-controls">
                       <label class="visually-hidden min-price" for="lowest-price">Наименьшая цена</label>
                       <input  type="text" id="lowest-price" value="0">
-                      <p class="price-controls__label">руб.&ndash;</p>
+                      <span class="price-controls__label">руб.&ndash;</span>
                       <label class="visually-hidden max-price" for="highest-price">Наибольшая цена</label>
                       <input type="text" id="highest-price" value="500">
-                      <p class="price-controls__label">руб.</p>
-                    </div>
+                      <span class="price-controls__label">руб.</span>
+                    </span>
                   </legend>
                     <div class="choice-form-item__range-filter">
                       <div class="range-controls">
@@ -314,9 +314,9 @@
             </article>
           </div>
 
-          <ul class="paginator">
+          <div class="paginator">
             <div class="paginator__wrapper">
-              <div class="width">
+              <ul class="width">
                 <li class="paginator__item--prev"><a class="paginator__link paginator__link--prev" href="#">Назад</a></li>
                 <li class="paginator__item--current"><a class="paginator__link paginator__link--current" href="#">1</a></li>
                 <li class="paginator__item"><a class="paginator__link" href="#">2</a></li>
@@ -324,9 +324,9 @@
                 <li class="paginator__item"><a class="paginator__link" href="#">4</a></li>
                 <li class="paginator__item"><a class="paginator__link" href="#">5</a></li>
                 <li class="paginator__item--next"><a class="paginator__link paginator__link--next" href="#">Вперёд</a></li>
+              </ul>
             </div>
-            </div>
-          </ul>
+          </div>
 
         </section>
       </div>
@@ -341,16 +341,16 @@
           <a class="main-footer__social__button main-footer__social__button__fb" href="#">Фейсбук</a>
           <a class="main-footer__social__button main-footer__social__button__vk" href="#">Вконтакте</a>
         </div>
-        <ul class="main-footer__menu">
-          <div class="left__wrapper">
+        <div class="main-footer__menu">
+          <ul class="left__wrapper">
             <li class="main-footer__menu__item--bold"><a class="main-footer__menu__link " href="#">Для поставщиков</a></li>
             <li><a class="main-footer__menu__link" href="#">О производстве</a></li>
-          </div>
-          <div class="right__wrapper">
+          </ul>
+          <ul class="right__wrapper">
             <li><a class="main-footer__menu__link" href="#">Наши документы</a></li>
             <li><a class="main-footer__menu__link" href="#">Экологические стандарты</a></li>
-          </div>
-        </ul>
+          </ul>
+        </div>
         <div class="main-footer__copyright">
           <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-htmlacademy.svg" alt="Логотип HTMLacademy" width="108" height="39">
@@ -360,7 +360,7 @@
       </div>
       </div>
     </footer>
-    </div>
+
   </body>
 </html>
 

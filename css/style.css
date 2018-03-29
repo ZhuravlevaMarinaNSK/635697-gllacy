@@ -162,7 +162,7 @@ img {
 
 .main-menu__site-navigation__item:hover .main-menu__site-navigation__item__link,
 .main-menu__site-navigation__item:focus .main-menu__site-navigation__item__link {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 
   color: #333333;
 
@@ -172,6 +172,7 @@ img {
 .main-menu__site-navigation__item,
 .main-menu__site-navigation__item--active {
   display: inline-block;
+  vertical-align: middle;
   max-width: 170px;
   padding: 8px 13px;
 
@@ -181,17 +182,21 @@ img {
 
 .main-menu__user-navigation__item a {
   display: inline-block;
+  vertical-align: middle;
   max-width: 170px;
 
   word-wrap: break-word;
   word-break: break-all;
 }
+
 .main-menu__site-navigation__item:active,
 .main-menu__site-navigation__item--selected:active {
   color: #333333;
 
   background-color: #f8f7f4;
   -webkit-box-shadow: inset 0 2px 1px #696969;
+  -ms-box-shadow: inset 0 2px 1px #696969;
+  -moz-box-shadow: inset 0 2px 1px #696969;
           box-shadow: inset 0 2px 1px #696969;
 }
 
@@ -296,7 +301,7 @@ img {
           box-sizing: border-box;
   padding-top: 8px;
   padding-right: 16px;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
   padding-left: 42px;
 
   color: #ffffff;
@@ -373,8 +378,10 @@ img {
 }
 
 .main-menu__user-navigation__header-search:hover svg,
+.main-menu__user-navigation__header-sign-in__item:hover .main-menu__user-navigation__header-sign-in__link,
 .main-menu__user-navigation__header-sign-in__item:hover svg {
   color: #000000;
+  background-color: #f8f7f4;
 }
 
 .main-menu__user-navigation__header-search,
@@ -383,14 +390,15 @@ img {
 }
 
 .main-menu__user-navigation__header-search:hover svg,
-.main-menu__user-navigation__header-sign-in__item:hover .main-menu__user-navigation__header-sign-in__link {
-  padding-bottom: 15px;
+.main-menu__user-navigation__header-sign-in__item:hover .main-menu__user-navigation__header-sign-in__link,
+.main-menu__user-navigation__header-sign-in__item:hover svg {
+  padding-bottom: 10px;
 }
 
 .main-menu__user-navigation__header-sign-in__item:hover .modal__sign-in,
 .main-menu__user-navigation__header-sign-in__item:focus .modal__sign-in {
   position: absolute;
-  top: 27px;
+  top: 36px;
   right: -4px;
   z-index: 3;
 
@@ -491,6 +499,8 @@ img {
 }
 
 .modal__search .input__text {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   padding: 7px 13px;
 
@@ -644,6 +654,7 @@ img {
 
   word-wrap: break-word;
 }
+
 .row-2 .modal-cart__ice-cream {
   padding-top: 14px;
 }
@@ -677,6 +688,7 @@ img {
 
 .modal__cart__sum {
   display: inline-block;
+  vertical-align: middle;
 
   font-weight: 700;
   font-size: 15px;
@@ -756,6 +768,7 @@ img {
 
 .modal__feedback .button {
   display: inline-block;
+  vertical-align: middle;
   padding-top: 10px;
   padding-right: 19px;
   padding-bottom: 11px;
@@ -981,6 +994,7 @@ img {
 
 .choice-form__radio__label {
   display: inline-block;
+
   margin-top: 7px;
   margin-right: 13px;
 
@@ -999,6 +1013,7 @@ img {
   z-index: 2;
 
   display: inline-block;
+
   width: 25px;
   height: 25px;
   margin-right: 8px;
@@ -1050,6 +1065,7 @@ img {
 
 .choice-form__checkbox__label {
   display: inline-block;
+  vertical-align: middle;
   margin-top: 7px;
   margin-right: 14px;
 
@@ -1069,11 +1085,13 @@ img {
 .choice-form__checkbox__label:nth-of-type(4) {
   padding-right: 2px;
 }
+
 .choice-form__checkbox + .choice-form__checkbox__label::before {
   content: "";
   z-index: 2;
 
   display: inline-block;
+
   width: 27px;
   height: 23px;
   margin-right: 7px;
@@ -1190,6 +1208,7 @@ img {
 
 .price-controls {
   display: inline-block;
+  vertical-align: baseline;
   margin: 0;
   margin-left: -2px;
   padding: 0;
@@ -1199,6 +1218,7 @@ img {
 
 .price-controls__label {
   display: inline-block;
+  vertical-align: baseline;
   width: 26px;
   margin: 0;
 
@@ -1260,12 +1280,6 @@ img {
           box-shadow: inset 0 2px 1px #696969;
 }
 
-
-
-
-
-
-
 .background-wrapper {
   min-width: 940px;
 
@@ -1323,6 +1337,7 @@ img {
 
 .slider__controls label {
   display: inline-block;
+
   width: 17px;
   height: 17px;
   margin-right: 8px;
@@ -1469,7 +1484,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 
 .promo__item p {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 12px;
   margin-bottom: 45px;
 
   text-align: left;
@@ -1483,6 +1498,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 
 .promo__item .button {
   display: inline-block;
+  vertical-align: middle;
   padding: 11px 22px;
 
   text-align: right;
@@ -1536,12 +1552,13 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   -ms-flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .paginator {
-  margin: 0;
-  padding: 0;
-
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: rgba(255, 255, 255, 0.2);
@@ -1568,6 +1585,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 
 .paginator__link {
   display: inline-block;
+  vertical-align: middle;
   margin-top: 5px;
 
   font-weight: 500;
@@ -1650,7 +1668,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 
   max-width: 267px;
   margin-right: 26px;
-  margin-bottom: 46px;
+  margin-bottom: 45px;
 
   text-align: center; /*выравнивание подписи*/
   color: #ffffff;
@@ -1739,6 +1757,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
   content: "";
 
   display: inline-block;
+  vertical-align: baseline;
   width: 28px;
   height: 33px;
   margin-right: 5px;
@@ -1773,7 +1792,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
   margin-bottom: 41px;
   padding-top: 25px;
   padding-right: 23px;
-  padding-bottom: 27px;
+  padding-bottom: 28px;
   padding-left: 20px;
 
   background-color: #f1e6d1;
@@ -1885,7 +1904,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-width: 560px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   padding-top: 24px;
   padding-right: 254px;
   padding-bottom: 25px;
@@ -1946,7 +1965,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 
 .subscription-box p {
   margin: 0;
-  padding-bottom: 36px;
+  padding-bottom: 31px;
 }
 
 .subscription {
@@ -1990,6 +2009,18 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 }
 
 .input__text::-webkit-input-placeholder {
+  font-weight: 400;
+  line-height: 24px;
+  color: #999999;
+}
+
+.input__text::-moz-input-placeholder {
+  font-weight: 400;
+  line-height: 24px;
+  color: #999999;
+}
+
+.input__text::-ms-input-placeholder {
   font-weight: 400;
   line-height: 24px;
   color: #999999;
@@ -2079,6 +2110,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 
 .adress-and-feedback p {
   display: inline-block;
+  vertical-align: middle;
   margin: 0;
   margin-bottom: 14px;
 }
@@ -2090,6 +2122,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 
 .adress-and-feedback--big {
   display: inline-block;
+  vertical-align: middle;
 
   font-weight: 700;
   font-size: 18px;
@@ -2108,7 +2141,8 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 
 .adress-and-feedback__button {
   display: inline-block;
-  padding: 11px 28px;
+  vertical-align: middle;
+  padding: 11px 27px;
 
   word-wrap: break-word;
   word-break: break-all;
@@ -2129,12 +2163,16 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 }
 
 .main-footer__social,
-.main-footer__menu,
-.paginator {
+.left__wrapper,
+.right__wrapper {
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.left__wrapper {
+  margin-right: 31px;
 }
 
 .main-footer__social {
@@ -2189,6 +2227,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 
 .main-footer__social__button {
   display: inline-block;
+  vertical-align: middle;
   width: 32px;
   height: 32px;
   margin-right: 7px;
@@ -2207,7 +2246,8 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
   display: -ms-flexbox;
   display: flex;
       flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-content: center;
   width: 306px;
   padding-top: 12px;
 
@@ -2219,6 +2259,12 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 .main-footer__menu__link {
   font-size: 13px;
   line-height: 18px;
+}
+
+.main-footer__menu__item {
+  margin-right: 30px;
+  margin-bottom: 5px;
+  white-space: nowrap;
 }
 
 .main-footer__menu__link,
@@ -2292,6 +2338,7 @@ input[type="radio"].visually-hidden {
   margin: -1px;
   padding: 0;
   overflow: hidden;
+  -ms-overflow-style: none;
 
   white-space: nowrap;
 
