@@ -5,7 +5,7 @@
     <title>GllacyShop-магазин мороженого</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header>
@@ -17,12 +17,12 @@
           <div class="main-menu__container">
             <ul class="main-menu__site-navigation">
               <li class="main-menu__site-navigation__item main-menu__site-navigation__item--opened main-menu__site-navigation__item--active">
-                <a class="main-menu__site-navigation__item__link main-menu__site-navigation__item__link--selected" href="catalog.html"><span class="link-border link-border_main-nav">Каталог</span></a>
+                <a class="main-menu__site-navigation__item__link main-menu__site-navigation__item__link--selected"><span class="link-border link-border_main-nav">Каталог</span></a>
                 <ul class="main-menu__site-navigation__item__sub-menu">
                   <li>
                     <a class="main-menu__site-navigation__item__sub-menu__link main-menu__site-navigation__item__sub-menu__link--bold" href="#"><b>Новинки</b></a>
                   </li>
-                  <li><a class="main-menu__site-navigation__item__sub-menu__link" href="catalog.html">Сливочное</a></li>
+                  <li class="main-menu__site-navigation__item__sub-menu--selected"><a class="main-menu__site-navigation__item__sub-menu__link"  href="catalog.html">Сливочное</a></li>
                   <li><a class="main-menu__site-navigation__item__sub-menu__link" href="#">Щербеты</a></li>
                   <li><a class="main-menu__site-navigation__item__sub-menu__link" href="#">Фруктовый лед</a></li>
                   <li><a class="main-menu__site-navigation__item__sub-menu__link" href="#">Мелорин</a></li>
@@ -57,16 +57,16 @@
                   </svg>Вход</a>
 
                 <section class="modal modal__sign-in">
-                <h2 class="visually-hidden">Регистрация</h2>
-                <form class="modal__sign-in__form" action="https://echo.htmlacademy.ru" method="post">
-                  <label class="visually-hidden" for="modal-sign-in-email">Электронная почта</label>
-                  <input class="input__text" type="email" id="modal-sign-in-email" placeholder="Электронная почта">
-                  <label class="visually-hidden" for="modal-sign-in-password">Пароль</label>
-                  <input class="input__text"  type="password" id="modal-sign-in-password" placeholder="Пароль">
-                  <button class="button" type="submit">Войти</button>
-                </form>
-                <a class="modal__sign-in__link--password" href="#">Забыли пароль?</a>
-                <a class="modal__sign-in__link--new" href="#">Новая регистрация</a>
+                  <h2 class="visually-hidden">Регистрация</h2>
+                  <form class="modal__sign-in__form" action="https://echo.htmlacademy.ru" method="post">
+                    <label class="visually-hidden" for="modal-sign-in-email">Электронная почта</label>
+                    <input class="input__text" type="email" id="modal-sign-in-email" placeholder="Электронная почта">
+                    <label class="visually-hidden" for="modal-sign-in-password">Пароль</label>
+                    <input class="input__text"  type="password" id="modal-sign-in-password" placeholder="Пароль">
+                    <button class="button" type="submit">Войти</button>
+                  </form>
+                  <a class="modal__sign-in__link--password" href="#">Забыли пароль?</a>
+                  <a class="modal__sign-in__link--new" href="#">Новая регистрация</a>
                 </section>
               </li>
 
@@ -74,44 +74,44 @@
                 <a class="main-menu__user-navigation__header-cart__link main-menu__user-navigation__header-cart__link--two-goods" href="#">2 товара
                 </a>
 
-                  <section class="modal modal__cart">
-                  <h2 class="visually-hidden">Наполнение корзины</h2>
-                    <div class="table">
-                    <div class="row row-1">
-                      <button class="modal__cart__delete-item" type="button">
+                <section class="modal modal__cart">
+                <h2 class="visually-hidden">Наполнение корзины</h2>
+                  <div class="table">
+                  <div class="row row-1">
+                    <button class="modal__cart__delete-item" type="button">
 
-                      </button>
-                      <p class="modal__cart__img">
-                        <img src="img/ice-cream_orange-jam_small.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
-                      </p>
-                      <p class="modal-cart__ice-cream">Пломбир с апельсиновым джемом</p>
-                      <p class="modal-cart__price">1,5кг х<span class="modal-cart__price-count">200 руб.</span></p>
-                      <p class="price-per-weight">300 руб.</p>
-                    </div>
-                    <div class="row row-2">
-                      <button class="modal__cart__delete-item" type="button">
-
-                      </button>
-                      <p class="modal__cart__img">
-                        <img  src="img/ice-cream-strawberry_small.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
-                      </p>
-                      <p class="modal-cart__ice-cream">Клубничный пломбир с присыпкой из белого шоколада</p>
-                      <p class="modal-cart__price">1,5кг х<span class="modal-cart__price-count">300 руб.</span></p>
-                      <p class="price-per-weight">450 руб.</p>
-                    </div>
+                    </button>
+                    <p class="modal__cart__img">
+                      <img src="img/ice-cream_orange-jam_small.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
+                    </p>
+                    <p class="modal-cart__ice-cream">Пломбир с апельсиновым джемом</p>
+                    <p class="modal-cart__price">1,5кг х<span class="modal-cart__price-count">200 руб.</span></p>
+                    <p class="price-per-weight">300 руб.</p>
                   </div>
-                    <span class="right">
-                    <b class="modal__cart__sum">Итого: 750 руб.</b>
-                    </span>
-                    <a class="button modal__cart__button" href="#">Оформить заказ</a>
-                  </section>
-                </li>
-              </ul>
-            </div>
-          </nav>
+                  <div class="row row-2">
+                    <button class="modal__cart__delete-item" type="button">
 
-          <p class="contact-info"><span class="working-hours">С 10 до 20, ежедневно</span>
-          <a  href="tel:88124502525">8 812 450-25-25</a></p>
+                    </button>
+                    <p class="modal__cart__img">
+                      <img  src="img/ice-cream-strawberry_small.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
+                    </p>
+                    <p class="modal-cart__ice-cream">Клубничный пломбир с присыпкой из белого шоколада</p>
+                    <p class="modal-cart__price">1,5кг х<span class="modal-cart__price-count">300 руб.</span></p>
+                    <p class="price-per-weight">450 руб.</p>
+                  </div>
+                </div>
+                  <span class="right">
+                    <b class="modal__cart__sum">Итого: 750 руб.</b>
+                  </span>
+                  <a class="button modal__cart__button" href="#">Оформить заказ</a>
+                </section>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <p class="contact-info"><span class="working-hours">С 10 до 20, ежедневно</span>
+        <a  href="tel:88124502525">8 812 450-25-25</a></p>
       </div>
     </header>
 
@@ -134,83 +134,83 @@
 
         <section class="choice">
 
-              <h2 class="visually-hidden">Форма выбора</h2>
-              <form class="choice-form" action="https://echo.htmlacademy.ru" method="post">
-                <div class="choice-wrapper">
-                <fieldset class="choice-form-item choice-form-item__select">
-                  <label class="choice-form__label" for="sort">Сортировка:</label>
-                  <select class="choice-form__select" id="sort" name="sort">
-                    <option class="choice-form__select__item" value="popularity">по популярности</option>
-                    <option class="choice-form__select__item" value="cheapest">сначала недорогие</option>
-                    <option class="choice-form__select__item" value="expensive">сначала дорогие</option>
-                    <option class="choice-form__select__item" value="fat-range">по жирности</option>
-                  </select>
+          <h2 class="visually-hidden">Форма выбора</h2>
+          <form class="choice-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="choice-wrapper">
+              <fieldset class="choice-form-item choice-form-item__select">
+                <label class="choice-form__label" for="sort">Сортировка:</label>
+                <select class="choice-form__select" id="sort" name="sort">
+                  <option class="choice-form__select__item" value="popularity">по популярности</option>
+                  <option class="choice-form__select__item" value="cheapest">сначала недорогие</option>
+                  <option class="choice-form__select__item" value="expensive">сначала дорогие</option>
+                  <option class="choice-form__select__item" value="fat-range">по жирности</option>
+                </select>
 
-                  <svg class="select-arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-                    <polyline fill="currentColor" points="5.5,10 0,0 11,0 "/>
-                  </svg>
-                </fieldset>
+                <svg class="select-arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                  <polyline fill="currentColor" points="5.5,10 0,0 11,0 "/>
+                </svg>
+              </fieldset>
 
-                <fieldset class="choice-form-item choice-form-item__price">
-                  <legend class="choice-form__price">Цена:
-                    <span class="price-controls">
-                      <label class="visually-hidden min-price" for="lowest-price">Наименьшая цена</label>
-                      <input  type="text" id="lowest-price" value="0">
-                      <span class="price-controls__label">руб.&ndash;</span>
-                      <label class="visually-hidden max-price" for="highest-price">Наибольшая цена</label>
-                      <input type="text" id="highest-price" value="500">
-                      <span class="price-controls__label">руб.</span>
-                    </span>
-                  </legend>
-                    <div class="choice-form-item__range-filter">
-                      <div class="range-controls">
-                        <div class="scale">
-                          <div class="bar" style="margin-left: 0%; width: 40%"></div>
-                        </div>
-                        <div class="toggle toggle-min"></div>
-                        <div class="toggle toggle-max"></div>
-                       </div>
+              <fieldset class="choice-form-item choice-form-item__price">
+                <legend class="choice-form__price">Цена:
+                  <span class="price-controls">
+                    <label class="visually-hidden min-price" for="lowest-price">Наименьшая цена</label>
+                    <input  type="text" id="lowest-price" value="0">
+                    <span class="price-controls__label">руб.&ndash;</span>
+                    <label class="visually-hidden max-price" for="highest-price">Наибольшая цена</label>
+                    <input type="text" id="highest-price" value="500">
+                    <span class="price-controls__label">руб.</span>
+                  </span>
+                </legend>
+                  <div class="choice-form-item__range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar" style="margin-left: 0%; width: 40%"></div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
                     </div>
-                </fieldset>
-
-                <fieldset class="choice-form-item">
-                  <legend class="choice-form__fat">Жирность:</legend>
-                  <div class="choice-form__radio__wrapper">
-                    <input class="choice-form__radio" type="radio" id="choice-form-btn-1" name="fat" value="0">
-                    <label class="choice-form__label choice-form__radio__label" for="choice-form-btn-1">0%</label>
-                    <input class="choice-form__radio" type="radio" id="choice-form-btn-2" name="fat" value="up-to-10" checked>
-                    <label class="choice-form__label choice-form__radio__label" for="choice-form-btn-2">до 10%</label>
-                    <input class="choice-form__radio" type="radio" id="choice-form-btn-3" name="fat" value="up-to-30">
-                    <label class="choice-form__label choice-form__radio__label" for="choice-form-btn-3">до 30%</label>
-                    <input class="choice-form__radio" type="radio" id="choice-form-btn-4" name="fat" value="over-30">
-                    <label class="choice-form__label choice-form__radio__label" for="choice-form-btn-4">выше 30%</label>
                   </div>
-                </fieldset>
-                <fieldset class="choice-form-item choice-form-item__checkbox">
-                  <legend class="choice-form__inner">Наполнители:</legend>
-                  <div class="choice-form__checkbox__wrapper">
+              </fieldset>
 
-                      <input class="choice-form__checkbox" type="checkbox" id="chocolate" name="chocolate" value="chocolate" checked>
-                      <label class="choice-form__label choice-form__checkbox__label" for="chocolate">шоколадные</label>
+              <fieldset class="choice-form-item">
+                <legend class="choice-form__fat">Жирность:</legend>
+                <div class="choice-form__radio__wrapper">
+                  <input class="choice-form__radio" type="radio" id="choice-form-btn-1" name="fat" value="0">
+                  <label class="choice-form__label choice-form__radio__label" for="choice-form-btn-1">0%</label>
+                  <input class="choice-form__radio" type="radio" id="choice-form-btn-2" name="fat" value="up-to-10" checked>
+                  <label class="choice-form__label choice-form__radio__label" for="choice-form-btn-2">до 10%</label>
+                  <input class="choice-form__radio" type="radio" id="choice-form-btn-3" name="fat" value="up-to-30">
+                  <label class="choice-form__label choice-form__radio__label" for="choice-form-btn-3">до 30%</label>
+                  <input class="choice-form__radio" type="radio" id="choice-form-btn-4" name="fat" value="over-30">
+                  <label class="choice-form__label choice-form__radio__label" for="choice-form-btn-4">выше 30%</label>
+                </div>
+              </fieldset>
+              <fieldset class="choice-form-item choice-form-item__checkbox">
+                <legend class="choice-form__inner">Наполнители:</legend>
+                <div class="choice-form__checkbox__wrapper">
 
-                      <input class="choice-form__checkbox" type="checkbox" id="sugar" name="filler" value="sugar" checked>
-                      <label class="choice-form__label choice-form__checkbox__label" for="sugar">сахарные присыпки</label>
+                  <input class="choice-form__checkbox" type="checkbox" id="chocolate" name="chocolate" value="chocolate" checked>
+                  <label class="choice-form__label choice-form__checkbox__label" for="chocolate">шоколадные</label>
 
-                      <input class="choice-form__checkbox" type="checkbox" id="fruits" name="filler" value="fruits">
-                      <label class="choice-form__label choice-form__checkbox__label" for="fruits">фрукты</label>
+                  <input class="choice-form__checkbox" type="checkbox" id="sugar" name="filler" value="sugar" checked>
+                  <label class="choice-form__label choice-form__checkbox__label" for="sugar">сахарные присыпки</label>
 
-                      <input class="choice-form__checkbox" type="checkbox" id="syrup" name="filler" value="syrup">
-                      <label class="choice-form__label choice-form__checkbox__label" for="syrup">сиропы</label>
+                  <input class="choice-form__checkbox" type="checkbox" id="fruits" name="filler" value="fruits">
+                  <label class="choice-form__label choice-form__checkbox__label" for="fruits">фрукты</label>
 
-                      <input class="choice-form__checkbox" type="checkbox" id="jam" name="filler" value="jam">
-                      <label class="choice-form__label choice-form__checkbox__label" for="jam">джемы</label>
+                  <input class="choice-form__checkbox" type="checkbox" id="syrup" name="filler" value="syrup">
+                  <label class="choice-form__label choice-form__checkbox__label" for="syrup">сиропы</label>
+
+                  <input class="choice-form__checkbox" type="checkbox" id="jam" name="filler" value="jam">
+                  <label class="choice-form__label choice-form__checkbox__label" for="jam">джемы</label>
 
                 </div>
-                </fieldset>
-                <button class="choice-form__sort-button" type="submit">Применить</button>
-              </div>
-              </form>
+              </fieldset>
+              <button class="choice-form__sort-button" type="submit">Применить</button>
+            </div>
+          </form>
         </section>
 
         <section class="catalog">
@@ -327,7 +327,6 @@
               </ul>
             </div>
           </div>
-
         </section>
       </div>
     </main>
@@ -335,29 +334,29 @@
     <footer class="main-footer">
       <div class="container">
         <div class="main-footer__wrapper">
-        <div class="main-footer__social">
-          <a class="main-footer__social__button main-footer__social__button__tw" href="#">Твиттер</a>
-          <a class="main-footer__social__button main-footer__social__button__ing" href="#">Инстаграм</a>
-          <a class="main-footer__social__button main-footer__social__button__fb" href="#">Фейсбук</a>
-          <a class="main-footer__social__button main-footer__social__button__vk" href="#">Вконтакте</a>
+          <div class="main-footer__social">
+            <a class="main-footer__social__button main-footer__social__button__tw" href="#">Твиттер</a>
+            <a class="main-footer__social__button main-footer__social__button__ing" href="#">Инстаграм</a>
+            <a class="main-footer__social__button main-footer__social__button__fb" href="#">Фейсбук</a>
+            <a class="main-footer__social__button main-footer__social__button__vk" href="#">Вконтакте</a>
+          </div>
+          <div class="main-footer__menu">
+            <ul class="left__wrapper">
+              <li class="main-footer__menu__item--bold"><a class="main-footer__menu__link " href="#">Для поставщиков</a></li>
+              <li><a class="main-footer__menu__link" href="#">О производстве</a></li>
+            </ul>
+            <ul class="right__wrapper">
+              <li><a class="main-footer__menu__link" href="#">Наши документы</a></li>
+              <li><a class="main-footer__menu__link" href="#">Экологические стандарты</a></li>
+            </ul>
+          </div>
+          <div class="main-footer__copyright">
+            <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/logo-htmlacademy.svg" alt="Логотип HTMLacademy" width="108" height="39">
+            </a>
+            <p>Сделано в <a class="main-footer__button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
+          </div>
         </div>
-        <div class="main-footer__menu">
-          <ul class="left__wrapper">
-            <li class="main-footer__menu__item--bold"><a class="main-footer__menu__link " href="#">Для поставщиков</a></li>
-            <li><a class="main-footer__menu__link" href="#">О производстве</a></li>
-          </ul>
-          <ul class="right__wrapper">
-            <li><a class="main-footer__menu__link" href="#">Наши документы</a></li>
-            <li><a class="main-footer__menu__link" href="#">Экологические стандарты</a></li>
-          </ul>
-        </div>
-        <div class="main-footer__copyright">
-          <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-htmlacademy.svg" alt="Логотип HTMLacademy" width="108" height="39">
-          </a>
-          <p>Сделано в <a class="main-footer__button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
-        </div>
-      </div>
       </div>
     </footer>
 
