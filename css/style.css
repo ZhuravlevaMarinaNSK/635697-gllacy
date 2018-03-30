@@ -34,7 +34,7 @@ img {
 }
 
 .main-header-logo {
-  margin-right: 8px;
+  margin-right: 5px;
 }
 
 .main-menu {
@@ -148,7 +148,7 @@ img {
 .main-menu__site-navigation__item__link {
   display: inline-block;
 
-  padding: 8px 9px;
+  padding: 8px 13px;
 
   font-size: 16px;
   font-weight: 700;
@@ -190,9 +190,9 @@ img {
 .main-menu__site-navigation__item,
 .main-menu__site-navigation__item--active {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: baseline;
   max-width: 170px;
-  padding: 8px 4px;
+  padding: 8px 2px;
 
   word-wrap: break-word;
   word-break: break-all;
@@ -212,7 +212,7 @@ img {
   color: #333333;
 
   background-color: #f8f7f4;
-  padding: 8px 9px;
+  padding: 8px 13px;
   border-radius: 15px;
   -webkit-box-shadow: inset 0 2px 1px #696969;
   -ms-box-shadow: inset 0 2px 1px #696969;
@@ -240,7 +240,7 @@ img {
 
 .main-menu__site-navigation__item--opened:hover .main-menu__site-navigation__item__sub-menu {
   position: absolute;
-  top: 36px;
+  top: 46px;
   left: -4px;
 
   display: block;
@@ -249,6 +249,8 @@ img {
 
   background-color: #f8f7f4;
   border-radius: 5px;
+  -webkit-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .main-menu__site-navigation__item__sub-menu__link {
@@ -279,7 +281,7 @@ img {
 }
 
 .main-menu__site-navigation__item__sub-menu li:last-of-type {
-  padding-bottom: 9px;
+  padding-bottom: 14px;
 }
 
 .main-menu__site-navigation__item__sub-menu li:first-child::after {
@@ -750,7 +752,7 @@ img {
 .modal__feedback {
   position: fixed;
   top: 250px;
-  left: 609px;
+  left: 50%;
   z-index: 10;
 
   display: block;
@@ -1530,7 +1532,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 
 .promo__item p {
   margin: 0;
-  margin-top: 12px;
+  margin-top: 17px;
   margin-bottom: 45px;
 
   text-align: left;
