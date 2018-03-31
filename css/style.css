@@ -1428,9 +1428,9 @@ background-color: #d07058;
   display: none;
 }
 
-input[id="slider-item__brulee-and-raspberry"]:checked ~ .background-wrapper #slide1,
-input[id="slider-item__chocolate-and-lemon"]:checked ~ .background-wrapper #slide2,
-input[id="slider-item__strawberry"]:checked ~ .background-wrapper #slide3 {
+input[id="slider-item__brulee-and-raspberry"]:checked ~ .background-wrapper .slide1,
+input[id="slider-item__chocolate-and-lemon"]:checked ~ .background-wrapper .slide2,
+input[id="slider-item__strawberry"]:checked ~ .background-wrapper .slide3 {
   display: block;
 }
 
