@@ -1858,7 +1858,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
   margin-bottom: 38px;
   padding-top: 25px;
   padding-right: 23px;
-  padding-bottom: 28px;
+  padding-bottom: 26px;
   padding-left: 20px;
 
   background-color: #f1e6d1;
@@ -1895,7 +1895,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 
 .feature-item p {
   margin: 0;
-  margin-top: 21px;
+  margin-top: 23px;
   margin-left: -3px;
 }
 
