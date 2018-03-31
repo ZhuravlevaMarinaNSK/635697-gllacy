@@ -857,29 +857,26 @@ background-color: #d07058;
 }
 
 .working-hours {
-  position: relative;
-  top: -3px;
-  right: 5px;
-
   display: block;
 
   font-size: 14px;
   line-height: 16px;
+  margin-right: 5px;
 }
 
 .contact-info {
-  position: relative;
-  top: -2px;
-  left: -3px;
+  z-index: 4;
 
   float: right;
   margin: 0;
   padding: 0;
+  margin-top: -5px;
+  margin-right: 2px;
 }
 
 .contact-info a {
   display: block;
-  margin-top: 2px;
+  margin-top: 5px;
 
   font-size: 22px;
   line-height: 24px;
@@ -1904,7 +1901,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 
 .feature-item:nth-of-type(3) p,
 .feature-item:nth-of-type(4) p {
-  margin-top: 25px;
+  margin-top: 26px;
 }
 
 .feature-item:first-child::before {
@@ -2029,7 +2026,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-width: 564px;
-  margin-bottom: 39px;
+  margin-bottom: 41px;
 
   background-image: -webkit-repeating-linear-gradient(315deg, #f8f7f4, #f8f7f4 7px, #94ceff 7px, #94ceff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);
   background-image:      -o-repeating-linear-gradient(315deg, #f8f7f4, #f8f7f4 7px, #94ceff 7px, #94ceff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);
@@ -2039,7 +2036,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 
 .subscription-box p {
   margin: 0;
-  padding-bottom: 36px;
+  padding-bottom: 35px;
 }
 
 .subscription {
@@ -2110,20 +2107,10 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 
 .map-and-feedback__container {
   position: relative;
+  width: 100vw;
 
   width: 1200px;
   margin: 0 auto;
-}
-
-.map {
-  position: relative;
-  z-index: 1;
-
-  width: 100%;
-  height: 430px;
-  overflow: hidden;
-
-  outline: 1px solid green;
 }
 
 .map img {
@@ -2138,7 +2125,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
   position: relative;
   z-index: 7;
 
-  width: 100%;
+  width: 100vw;
   height: 430px;
 
   border: none;
@@ -2164,7 +2151,7 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 
 .adress-and-feedback {
   position: absolute;
-  right: 2.5%;
+  right: 2.4%;
   bottom: 64px;
   z-index: 10;
 
@@ -2363,8 +2350,8 @@ input[id="slider-item__strawberry"]:checked ~ .background-wrapper {
 .main-footer__menu__item--bold::before {
   content: url(../img/heart.svg);
   position: absolute;
-  top: 2px;
-  left: -23px;
+  top: 3px;
+  left: -24px;
 }
 
 .main-footer__copyright {
